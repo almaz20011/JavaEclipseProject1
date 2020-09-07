@@ -1,0 +1,240 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 05 13:34:25 EDT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (95 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='packages.Project.day4TestNg.WebloginHome()'><b>WebloginHome</b><br>Test class: packages.Project.day4TestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method WebloginHome but has not been marked @Optional or defined
+in /Users/almaz/eclips-2020/Project/testng4.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace836220863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace836220863'><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method WebloginHome but has not been marked @Optional or defined
+in /Users/almaz/eclips-2020/Project/testng4.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:272)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>packages.Project.day4TestNg@327b636c</td></tr>
+<tr>
+<td title='packages.Project.day3TestNg.urlProvider()'><b>urlProvider</b><br>Test class: packages.Project.day3TestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method urlProvider but has not been marked @Optional or defined
+in /Users/almaz/eclips-2020/Project/testng4.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace318857719", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace318857719'><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method urlProvider but has not been marked @Optional or defined
+in /Users/almaz/eclips-2020/Project/testng4.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:272)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>packages.Project.day3TestNg@15761df8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='packages.Project.day1TestNg.Demo()'><b>Demo</b><br>Test class: packages.Project.day1TestNg</td>
+<td></td>
+<td>0</td>
+<td>packages.Project.day1TestNg@45dd4eda</td></tr>
+<tr>
+<td title='packages.Project.day4TestNg.LoginAPIHomeLoan()'><b>LoginAPIHomeLoan</b><br>Test class: packages.Project.day4TestNg</td>
+<td></td>
+<td>0</td>
+<td>packages.Project.day4TestNg@327b636c</td></tr>
+<tr>
+<td title='packages.Project.day3TestNg.LoginAPIcarLoan()'><b>LoginAPIcarLoan</b><br>Test class: packages.Project.day3TestNg</td>
+<td></td>
+<td>0</td>
+<td>packages.Project.day3TestNg@15761df8</td></tr>
+<tr>
+<td title='packages.Project.day3TestNg.MobileLoginCarLoan()'><b>MobileLoginCarLoan</b><br>Test class: packages.Project.day3TestNg</td>
+<td></td>
+<td>0</td>
+<td>packages.Project.day3TestNg@15761df8</td></tr>
+<tr>
+<td title='packages.Project.day3TestNg.MobileLoginHome()'><b>MobileLoginHome</b><br>Test class: packages.Project.day3TestNg</td>
+<td></td>
+<td>0</td>
+<td>packages.Project.day3TestNg@15761df8</td></tr>
+<tr>
+<td title='packages.Project.day4TestNg.MobileLoginHomeLoan()'><b>MobileLoginHomeLoan</b><br>Test class: packages.Project.day4TestNg</td>
+<td></td>
+<td>0</td>
+<td>packages.Project.day4TestNg@327b636c</td></tr>
+<tr>
+<td title='packages.Project.day3TestNg.MobileSignOutCarLoan()'><b>MobileSignOutCarLoan</b><br>Test class: packages.Project.day3TestNg<br>Parameters: FirstSetUserName, password</td>
+<td></td>
+<td>0</td>
+<td>packages.Project.day3TestNg@15761df8</td></tr>
+<tr>
+<td title='packages.Project.day3TestNg.MobileSignOutCarLoan()'><b>MobileSignOutCarLoan</b><br>Test class: packages.Project.day3TestNg<br>Parameters: SecondSetUserName, secondPassword</td>
+<td></td>
+<td>0</td>
+<td>packages.Project.day3TestNg@15761df8</td></tr>
+<tr>
+<td title='packages.Project.day3TestNg.MobileSignOutCarLoan()'><b>MobileSignOutCarLoan</b><br>Test class: packages.Project.day3TestNg<br>Parameters: thirdPassword, null</td>
+<td></td>
+<td>0</td>
+<td>packages.Project.day3TestNg@15761df8</td></tr>
+<tr>
+<td title='packages.Project.day1TestNg.SecondTest()'><b>SecondTest</b><br>Test class: packages.Project.day1TestNg</td>
+<td></td>
+<td>0</td>
+<td>packages.Project.day1TestNg@45dd4eda</td></tr>
+<tr>
+<td title='packages.Project.day3TestNg.WebloginCarLoan()'><b>WebloginCarLoan</b><br>Test class: packages.Project.day3TestNg</td>
+<td></td>
+<td>0</td>
+<td>packages.Project.day3TestNg@15761df8</td></tr>
+<tr>
+<td title='packages.Project.day2TestNg.ploan()'><b>ploan</b><br>Test class: packages.Project.day2TestNg</td>
+<td></td>
+<td>0</td>
+<td>packages.Project.day2TestNg@6ab7a896</td></tr>
+<tr>
+<td title='packages.Project.day3TestNg.timeExplicit()'><b>timeExplicit</b><br>Test class: packages.Project.day3TestNg</td>
+<td></td>
+<td>0</td>
+<td>packages.Project.day3TestNg@15761df8</td></tr>
+</table><p>
+</body>
+</html>

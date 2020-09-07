@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.666 s <<< FAILURE! - in TestSuite
+packages.Project.day4TestNg.WebloginHome  Time elapsed: 0.013 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'URL' is required by @Test on method WebloginHome but has not been marked @Optional or defined
+in /Users/almaz/eclips-2020/Project/testng4.xml
+
+packages.Project.day3TestNg.urlProvider  Time elapsed: 0.011 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'URL' is required by @Test on method urlProvider but has not been marked @Optional or defined
+in /Users/almaz/eclips-2020/Project/testng4.xml
+

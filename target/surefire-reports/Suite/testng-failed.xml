@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="packages.Project.day4TestNg">
+        <methods>
+          <include name="WebloginHome"/>
+        </methods>
+      </class> <!-- packages.Project.day4TestNg -->
+      <class name="packages.Project.day3TestNg">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="BfSuite"/>
+          <include name="urlProvider"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- packages.Project.day3TestNg -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
