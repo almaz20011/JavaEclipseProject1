@@ -15,12 +15,15 @@ public class day1TestNg {
 	@AfterTest
 	public void lastExecution() {
 		System.out.println("I will execute last - Day1");
+		System.out.println("I will execute from Git Hub");
+		
 		
 	}
 	
 	@Test
 	public void Demo() {
 		System.out.println("hello - Day1");
+		System.out.println("Hello Git Hub !");
 		AssertJUnit.assertTrue(true);
 	}
 	
@@ -32,6 +35,7 @@ public class day1TestNg {
 	@Test
 	public void SecondTest() {
 		System.out.println("bye - Day1");
+		System.out.println("Bye Git Hub");
 	}
 
 }
